@@ -2,12 +2,10 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Categorias de Peso - Boxe Brasil</title>
-
 </head>
 
 <body>
@@ -21,20 +19,17 @@
         </p>
 
         <nav>
-
             <a href="index.html">Início</a> |
-            <a href="historia.html">História</a> |
+            <a href="história.html">História</a> |
             <a href="fundamentos.html">Fundamentos</a> |
             <a href="regras.html">Regras</a> |
             <a href="golpes.html">Golpes</a> |
-            <a href="treinamentos.html">Treinamento</a> |
+            <a href="treinamento.html">Treinamento</a> |
             <a href="lutas.html">Lutas</a> |
             <a href="campeoes.html">Campeões</a> |
             <a href="categorias.html">Categorias</a> |
             <a href="galeria.html">Galeria</a> |
-            <a href="midia.html">Mídia</a> |
-            
-
+            <a href="midia.html">Mídia</a>
         </nav>
 
     </header>
@@ -62,47 +57,123 @@
             <table border="1">
 
                 <tr>
-
                     <th>Categoria</th>
-
                     <th>Característica</th>
-
                 </tr>
 
-
                 <tr>
-
                     <td>Pesos leves</td>
-
                     <td>
                         Categorias destinadas a atletas de menor peso.
                     </td>
-
                 </tr>
 
-
                 <tr>
-
                     <td>Pesos médios</td>
-
                     <td>
                         Categorias intermediárias.
                     </td>
-
                 </tr>
 
-
                 <tr>
-
                     <td>Pesos pesados</td>
-
                     <td>
                         Categorias destinadas a atletas de maior peso.
                     </td>
-
                 </tr>
 
             </table>
+
+        </section>
+
+
+        <!-- FORMULÁRIO DO PROJETO -->
+
+        <section>
+
+            <h2>Monte seu perfil de treino</h2>
+
+            <form>
+
+                <label for="nome">Nome:</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+                <br><br>
+
+
+                <label for="data">Data do treino:</label>
+                <input
+                    type="date"
+                    id="data"
+                    name="data"
+                    required
+                >
+
+                <br><br>
+
+
+                <label for="foto">Escolha uma foto:</label>
+                <input
+                    type="file"
+                    id="foto"
+                    name="foto"
+                >
+
+                <br><br>
+
+
+                <label for="cor">Escolha uma cor:</label>
+                <input
+                    type="color"
+                    id="cor"
+                    name="cor"
+                >
+
+                <br><br>
+
+
+                <label for="nivel">Nível de intensidade:</label>
+                <input
+                    type="range"
+                    id="nivel"
+                    name="nivel"
+                    min="0"
+                    max="10"
+                >
+
+                <br><br>
+
+
+                <label for="lutador">Lutador favorito:</label>
+
+                <input
+                    list="lutadores"
+                    id="lutador"
+                    name="lutador"
+                    placeholder="Escolha um lutador"
+                >
+
+                <datalist id="lutadores">
+
+                    <option value="Muhammad Ali">
+                    <option value="Mike Tyson">
+                    <option value="Acelino Popó">
+                    <option value="Manny Pacquiao">
+
+                </datalist>
+
+                <br><br>
+
+
+                <button type="submit">Enviar</button>
+
+            </form>
 
         </section>
 
